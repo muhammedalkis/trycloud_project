@@ -10,13 +10,13 @@ import org.junit.runner.RunWith;
                 //"pretty",
                 "html:target/cucumber-reports.html",
                 "json:target/cucumber.json",
-                "rerun:target/rerun.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+                "rerun:target/rerun.txt"
+               // "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
         glue = "com/trycloud/step_definitions",
         //dryRun = true,
-        tags ="",
+        tags ="@Logout",
         publish = true
 
 )

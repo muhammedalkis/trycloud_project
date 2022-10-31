@@ -30,4 +30,15 @@ public class LoginPage {
 
     @FindBy(xpath = "//input[@required ='required']")
     public WebElement requiredMessage;
+
+    @FindBy(xpath = "//input[@type = 'password']")
+    public WebElement typePassword;
+
+    @FindBy(xpath = "//a[@href ='#']")
+    public WebElement showPassword;
+
+    @FindBy(id = "reset-password-submit")
+    public WebElement resetPassword;
+
+
 }
